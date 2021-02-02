@@ -20,5 +20,20 @@
   <%= @calculation.start_date %>
 </p>
 
+<table>
+  <th>payments</th>
+  <th>loan_amounts</th>
+  <th>interests</th>
+  <th>balances</th>
+  <% @amortization_table.each do |value| %>
+      <tr>
+        <td><%= value[:payments] %></td>
+        <td><%= value[:loan_amounts] %></td>
+        <td><%= value[:interests] %></td>
+        <td><%= value[:balances] %></td>
+      </tr>
+  <% end %>
+</table>
+
 <%= link_to 'Edit', edit_calculation_path(@calculation) %> |
 <%= link_to 'Back', calculations_path %>

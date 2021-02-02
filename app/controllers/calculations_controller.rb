@@ -8,6 +8,8 @@ class CalculationsController < ApplicationController
 
   # GET /calculations/1 or /calculations/1.json
   def show
+    cal = AmortizationService.new(@calculation.loan_amount, @calculation.interest_rate, @calculation.terms)
+    @amortization_table = cal.amortization_table(cal)
   end
 
   # GET /calculations/new
