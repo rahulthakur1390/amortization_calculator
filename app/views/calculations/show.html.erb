@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Loan amount:</strong>
+  <%= @calculation.loan_amount %>
+</p>
+
+<p>
+  <strong>Terms:</strong>
+  <%= @calculation.terms %>
+</p>
+
+<p>
+  <strong>Interest rate:</strong>
+  <%= @calculation.interest_rate %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @calculation.start_date %>
+</p>
+
+<%= link_to 'Edit', edit_calculation_path(@calculation) %> |
+<%= link_to 'Back', calculations_path %>
