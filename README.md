@@ -1,24 +1,13 @@
-# README
+# Precious Gem
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version : 2.5.3
 
-Things you may want to cover:
+* Rails version : 5.2.4
 
-* Ruby version
+* Database : postgresql
 
-* System dependencies
+# Application need `loan amount`, `loan terms (duration in months)`, `interest rate` and `start_date` detail to a form.
 
-* Configuration
+Form submission will give you `Amortization Tables`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+URL: `https://amortizationcalculator.herokuapp.com/`
