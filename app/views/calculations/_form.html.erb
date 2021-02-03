@@ -11,24 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :loan_amount %>
-    <%= form.number_field :loan_amount %>
+  <div class="form-group">
+    <label>Loan Amount</label>
+    <%= form.number_field :loan_amount, class: "form-control col-sm-2" %>
   </div>
 
-  <div class="field">
-    <%= form.label :terms %>
-    <%= form.number_field :terms %>
+  <div class="form-group">
+    <label>Terms (in month)</label>
+    <%= form.number_field :terms, class: "form-control col-sm-2" %>
   </div>
 
-  <div class="field">
-    <%= form.label :interest_rate %>
-    <%= form.number_field :interest_rate %>
+  <div class="form-group">
+    <label>Interest Rate</label>
+    <%= form.number_field :interest_rate, class: "form-control col-sm-2" %>
   </div>
 
-  <div class="field">
-    <%= form.label :start_date %>
-    <%= form.date_select :start_date %>
+  <div class="form-group">
+    <label>Start Date</label>
+    <%= form.date_select :start_date, class: "form-control col-sm-2" %>
   </div>
 
   <div class="actions">

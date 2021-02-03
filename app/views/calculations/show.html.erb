@@ -17,21 +17,25 @@
 
 <p>
   <strong>Start date:</strong>
-  <%= @calculation.start_date %>
+  <%= @calculation.start_date.strftime("%m/%d/%Y") %>
 </p>
 
-<table>
-  <th>payments</th>
-  <th>loan_amounts</th>
-  <th>interests</th>
-  <th>balances</th>
+<table class='table table-striped'>
+  <th>Date</th>
+  <th>Start Balance</th>
+  <th>Principle</th>
+  <th>Interest</th>
+  <th>Total Pmt</th>
+  <th>End Balance</th>
   <% @amortization_table.each do |value| %>
-      <tr>
-        <td><%= value[:payments] %></td>
-        <td><%= value[:loan_amounts] %></td>
-        <td><%= value[:interests] %></td>
-        <td><%= value[:balances] %></td>
-      </tr>
+    <tr>
+      <td><%= value[:date] %></td>
+      <td><%= value[:start_balance] %></td>
+      <td><%= value[:principle] %></td>
+      <td><%= value[:interest] %></td>
+      <td><%= value[:total_payment] %></td>
+      <td><%= value[:end_balance] %></td>
+    </tr>
   <% end %>
 </table>
 
